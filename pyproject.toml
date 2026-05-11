@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gemq"
+version = "0.1.0"
+description = "GEMQ for MoE-LLMs quantization"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.8.0",
+    "transformers>=4.57.0",
+    "accelerate>=1.10.1",
+    "datasets>=4.3.0",
+    "hqq>=0.2.8",
+    "gemlite>=0.5.1",
+    "triton>=3.4.0",
+    "numpy>=2.2.6",
+    "tqdm",
+    "sentencepiece>=0.2.1",
+    "protobuf>=6.32.1",
+    "gurobipy>=12.0.3"
+]
+
+[tool.setuptools.packages.find]
+include = ["gemq*"]
