@@ -24,8 +24,9 @@ cd GEMQ
 pip install -e .
 ```
 
-[!NOTE]
-This project uses **gurobipy** as the integer linear programming (ILP) solver for bit allocation. A Gurobi license may be required for certain MoE models, especially those with a large number of experts.
+> [!NOTE]
+>
+> This project uses **gurobipy** as the integer linear programming (ILP) solver for bit allocation. A Gurobi license may be required for certain MoE models, especially those with a large number of experts.
 
 
 
