@@ -45,5 +45,4 @@ python -m gemq.compute_model_stats \
     --wbits ${wbits} \
     --layer_grads_path ${layer_grads_path} \
     --layer_re_path ${layer_re_path} \
-    --faster_layer_re \
     --forward_batch_size 1

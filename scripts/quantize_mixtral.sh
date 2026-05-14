@@ -25,14 +25,15 @@ bit_cfg="configs/${model_name}/GEMQ/C4-Seed0_E${bpe}_B1,2,3_c2c3.pkl"
 # ===============================
 #  Router fine-tuning
 # ===============================
-finetune_routers=false     # whether to finetune the routers after quantization
+# NOTE: 3x 80G GPUs are required for Mixtral-8x7B router fine-tuning
+finetune_routers=true      # whether to finetune the routers after quantization
 rft_epochs=1
 rft_lr=1e-4
 
 # ===============================
 #  Evaluation settings
 # ===============================
-# NOTE: if enable downstream eval, 2x 80G GPUs are required
+# NOTE: 2x 80G GPUs are required for downstream eval
 eval_downstream=false      # whether to run downstream eval after quantization
 downstream_tasks="piqa,arc_easy,arc_challenge,hellaswag,winogrande,mathqa,mmlu"
 

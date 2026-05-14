@@ -503,10 +503,6 @@ def parse_args():
         help="Whether to use the faster implementation for computing layer reconstruction errors"
     )
     parser.add_argument(
-        "--faster_layer_re", action="store_true",
-        help="Whether to use the faster implementation for computing layer reconstruction errors"
-    )
-    parser.add_argument(
         "--layer_grads_path",  type=str, default="",
         help="Path to the layer activation gradients"
     )

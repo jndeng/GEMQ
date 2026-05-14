@@ -30,7 +30,8 @@ bit_cfg="configs/${model_name}/GEMQ/C4-Seed0_E${bpe}_B1,2,3_c2c3.pkl"
 # ===============================
 #  Router fine-tuning
 # ===============================
-finetune_routers=false     # whether to finetune the routers after quantization
+# NOTE: 2x 80G GPUs are required for DeepSeek-V2-Lite router fine-tuning
+finetune_routers=true      # whether to finetune the routers after quantization
 rft_epochs=1
 rft_lr=1e-4
 
