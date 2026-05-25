@@ -1,6 +1,6 @@
 # GEMQ: Global Expert-Level Mixed-Precision Quantization for MoE LLMs
 
-<!-- [![arXiv](https://img.shields.io/badge/arXiv-2505.05799-b31b1b?logo=arxiv&logoColor=red)](paper link on arxiv)&nbsp; -->
+[![arXiv](https://img.shields.io/badge/arXiv-2605.23078-b31b1b?logo=arxiv&logoColor=red)](https://arxiv.org/abs/2605.23078)&nbsp;
 
 GEMQ is a post-training quantization framework for Mixture-of-Experts (MoE) LLMs that enables extreme low-bit quantization (down to 1.5 bits per expert) with minimal accuracy degradation. It works by:
 1. automatically assigning different bit-widths to experts based on their importance;
